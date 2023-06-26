@@ -16,7 +16,6 @@ app.use(express.json());
 
 
 
-
 // Middleware for Verify valid user and secure data
 const verifyJW = (req, res, next) => {
   const authHeader = req.headers.authorization;
