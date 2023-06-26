@@ -15,7 +15,6 @@ app.use(cors());
 app.use(express.json());
 
 
-
 // Middleware for Verify valid user and secure data
 const verifyJW = (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -34,8 +33,6 @@ const verifyJW = (req, res, next) => {
   })
 
 }
-
-
 
 
 const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASS}@cluster0.0izne.mongodb.net/?retryWrites=true&w=majority`;
