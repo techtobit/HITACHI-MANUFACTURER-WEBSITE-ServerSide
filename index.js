@@ -7,7 +7,7 @@ let jwt = require('jsonwebtoken');
 const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
-require("./bin/www");
+// require("./bin/www");
 
 //Middleware
 app.use(express.static("public"));
