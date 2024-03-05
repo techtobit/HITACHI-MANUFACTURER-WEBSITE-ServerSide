@@ -314,9 +314,9 @@ async function run() {
 //calling async function
 run().catch(console.dir)
 
-app.get('/', (req, res) => {
-  res.send('Site is Runinng');
-})
+// app.get('/', (req, res) => {
+//   res.send('Site is Runinng');
+// })
 
 app.listen(port, () => {
   console.log(`Site is run from port ${port}`)
