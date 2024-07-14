@@ -40,7 +40,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     const productsCollection = client.db("database").collection("products");
     const addCartCollection = client.db("database").collection("addcart");
     const userCollection = client.db("database").collection("user");
